@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 
 var hasBought
+var bullet := preload("res://Towers/bullets/machineGunBullets.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -21,3 +22,9 @@ func _process(delta):
 		look_at(get_parent().get_node("PLayer").position)
 
 
+
+
+func _on_fireTimer_timeout():
+	var instacedBullet = bullet.instance()
+	instacedBullet.position = position
+	get_parent().add_child(instacedBullet)

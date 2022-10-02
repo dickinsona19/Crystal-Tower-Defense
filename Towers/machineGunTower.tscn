@@ -17,3 +17,8 @@ texture = ExtResource( 1 )
 
 [node name="firePostion" type="Node2D" parent="."]
 position = Vector2( 27, 0 )
+
+[node name="fireTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="fireTimer" to="." method="_on_fireTimer_timeout"]
