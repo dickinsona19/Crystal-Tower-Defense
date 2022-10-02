@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="timelabel" type="Label" parent="."]
+margin_left = 338.0
+margin_top = 23.0
+margin_right = 604.0
+margin_bottom = 55.0
+text = "TIME: 10"
