@@ -16,4 +16,4 @@ func _process(delta):
 	var player = get_parent().get_node("PLayer")
 	look_at(player.position)
 	var vector = (player.position - global_position).normalized()
-	translate(vector)
+	translate(vector*5)
